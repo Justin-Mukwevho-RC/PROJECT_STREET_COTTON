@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply font styles and background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--baby-powder);
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+/* Style the header, including the navigation bar and logo */
+header {
+    background-color: var(--oxford-blue);
+    color: var(--baby-powder);
+    padding: 10px 0;
+}
+
+/* Style the logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
+video {
+    
+    max-height: 720px;
+    aspect-ratio: 9/16;
+    align-items: flex-start;
+    margin: 0%;
+    padding: 0%;
+    object-position: 0% 0%;
+}
+
+/* Style the navigation bar */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--baby-powder);
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Style the hero section */
+.hero {
+    background-color: var(--black);
+    color: var(--baby-powder);
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Style the video */
+.hero video {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+/* Style the explore button */
+.explore-button {
+    display: inline-block;
+    background-color: var(--crimson);
+    color: var(--baby-powder);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+    background-color: var(--glaucous);
+}
+
+/* Style the footer */
+footer {
+    background-color: var(--oxford-blue);
+    color: var(--baby-powder);
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Style the navigation links in the footer */
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: var(--baby-powder);
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
