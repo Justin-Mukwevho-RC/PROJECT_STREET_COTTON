@@ -12,21 +12,25 @@
 
         <link rel="icon" href="../Assets/images/favicon.png" type="image/png"> <!-- Conventional 32x32px was used-->
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Link to the Animate.css stylesheet -->
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS stylesheet -->
+
+        
 
 
     </head> <!-- End of Head -->
 
     <body> <!-- Text alignment is set to center for all elements -->
 
-        <header>
+        <header class="animate__animated animate__slideInLeft">
 
             <!-- Street Cotton Logo -->
             
-            <a href="index.html">
+            <a href="index.html"> <!-- Logo links to home page, I have noticed this pattern is most websites -->
+
             <img src="../Assets/images/logo.png" alt="Street Cotton Logo" class="logo">
+
             </a>
     
             <!-- Navigation Bar -->
@@ -36,7 +40,7 @@
                 <a href="about.html"> About Us | </a> <!-- Introduction to the team -->
                 <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue -->
                 <a href="location.html"> Visit Us | </a> <!-- Location of the store --> 
-                <a href="contact.html"> Customer Support</a> <!-- Contact details -->
+                <a href="contact.html"> Customer Support |</a> <!-- Contact details -->
     
             </nav>    
     
@@ -45,42 +49,57 @@
         <!-- Hero Section - For Introductive film-->
         <section class="hero">
 
-            <h1>Street Cotton</h1> <!-- Brand Name -->
+            <h1 class="animate__animated animate__slideInRight">WELCOME TO STREET COTTON</h1> <!-- Brand Name -->
 
-            <p> 
-                
-                Street Cotton is a clothing brand that is inspired by the street culture of South Africa.
-                We are a proudly South African brand that is dedicated to providing our customers with the best quality 
-                clothing that is both comfortable and stylish.
+            <div class="video-container"> <!-- Video container for desktop and mobile versions of the website -->
+            <video autoplay loop muted volume="0" class="desktop-video">
+                <source src="../Assets/videos/intro.mp4" type="video/mp4">
+                Your browser does not support video playback, Opera GX is recommended. 
+            </video><br>
             
-            </p>
-
-            <video autoplay loop muted volume="0"> <!-- HD Quality-->
-
-                <source src="../Assets/videos/montage.mp4" type="video/mp4">
-
-                Your browser does not support video playback, Opera GX is recommended. <!-- Fallback message -->
-            
+            <video autoplay loop muted volume="0" class="mobile-video"> <!-- Video for mobile version of the website -->
+                <source src="../Assets/videos/montage.mp4" type="video/mp4"> 
+                Your browser does not support video playback, Opera GX is recommended. 
             </video>
-              
-
-              
+            </div>  
         
         </section><br> <!-- End of Hero Section -->
 
         <!-- Call to action for visiting about page -->
-        <a href="about.html"><button>Explore</button></a>
+        <p>
+
+            <a href="about.html" class="cta-button">
+                
+                EXPLORE STREET COTTON
+            
+            </a>
+
+        </p>
+
+        <section class="brand-message">
+                
+                <h2>Where there is Cotton, There is Life</h2> <!-- Brand Message -->
+    
+                <p> <!-- Introduction for new visitors -->
+    
+                    Street Cotton is a clothing brand that is inspired by the street culture of South Africa.
+                    We are a proudly South African brand that is dedicated to providing our customers with the best quality 
+                    clothing that is both comfortable and stylish. 
+                
+                </p>
+
+        </section>
 
         <!-- Footer Section -->
         <footer>
 
             <p>2023&copy; Street Cotton &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
 
-            <nav>
+            <nav class="navbar">
 
                 <a href="terms.html">Terms & Conditions |</a> <!-- Terms and Conditions -->
                 <a href="privacy.html">Privacy |</a> <!-- Privacy Policy -->
-                <a href="contact.html">Get in touch with us</a> <!-- Contact details -->
+                <a href="contact.html">Get in touch with us |</a> <!-- Contact details -->
 
             </nav>
 

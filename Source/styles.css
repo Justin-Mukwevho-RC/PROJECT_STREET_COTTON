@@ -1,166 +1,258 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+:root {
+    --black: #000000ff;
+    --crimson: #d60a3dff;
+    --glaucous: #4b7fd2ff;
+    --baby-powder: #fdfffcff;
+    --oxford-blue: #002552ff;
 }
-
-/* Apply font styles and background color to the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--baby-powder);
+        
+main {
     text-align: center;
 }
-h1, h2, h3 {
-    font-family: 'Bebas Neue', sans-serif;
 
-}
+body {
 
-/* Style the header, including the navigation bar and logo */
-header {
-    background-color: var(--oxford-blue);
-    color: var(--baby-powder);
-    padding: 10px 0;
-}
-
-/* Style the logo */
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: auto;
-}
-video {
-    
-    max-height: 720px;
-    aspect-ratio: 9/16;
-    align-items: flex-start;
-    margin: 0%;
-    padding: 0%;
-    object-position: 0% 0%;
-}
-
-/* Style the navigation bar */
-.navbar {
-    list-style-type: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    text-align: center;
+    
 }
 
-.navbar a {
-    text-decoration: none;
-    color: var(--baby-powder);
-    margin: 0 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Style the hero section */
 .hero {
-    background-color: var(--black);
-    color: var(--baby-powder);
-    padding: 50px 0;
+    text-align: center;
+    padding: 10px 0;
+    background-image: url(../Assets/images/image2.jpg);
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+.brand-message {
+    text-align: center;
+    padding: 40px;
 }
 
-/* Style the video */
-.hero video {
-    width: 100%;
-    max-width: 1280px;
-    height: auto;
+.brand-message p {
+    font-size: 1.2em;
 }
 
-/* Style the explore button */
-.explore-button {
-    display: inline-block;
-    background-color: var(--crimson);
-    color: var(--baby-powder);
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease-in-out;
+header {
+    text-align: center;
+    padding: 0px 0;
+    background-color: var(--baby-powder);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This aligns the logo to the left and the navbar to the right */
 }
 
-.explore-button:hover {
-    background-color: var(--glaucous);
+.logo {
+    display: block; margin: 0 auto; width: 200px; height: auto;
 }
 
-/* Style the footer */
-footer {
-    background-color: var(--oxford-blue);
-    color: var(--baby-powder);
+.navbar {
+    
+    background-color: var(--baby-powder);
+    color: var(--black);
+    text-align: center;
     padding: 10px 0;
+    text-emphasis: bold;
+    text-shadow: var(--oxford-blue);
+    font-family: sans-serif, Arial, Helvetica !important;
+    font-weight: bold;
 }
 
-footer p {
-    font-size: 1rem;
-}
-
-/* Style the navigation links in the footer */
-footer nav {
-    margin-top: 10px;
-}
-
-footer nav a {
+.navbar a {
+    color: var(--black);
+    
+    background-color: var(--baby-powder);
     text-decoration: none;
-    color: var(--baby-powder);
+    
+    padding: 10px 20px;
     margin: 0 10px;
-    font-size: 0.8rem;
 }
-.image-grid {
+.navbar a:hover {
+    color: var(--baby-powder);
+    background-color: var(--black); 
+    text-decoration:none;
+    border-radius: 0.1em;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    color: var(--oxford-blue);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: var(--baby-powder);
+    padding: 1px 0;
+}
+h1 {
+    text-align: center;
+    color: var(--glaucous);
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 10px 0;
+    
+}
+
+    .cta-button {
+        background-color: var(--glaucous);
+                text-align: center;
+            
+                color: var(--baby-powder);
+                text-decoration: none;
+                margin: 0 10px;
+                display: block;
+                text-decoration: none;
+                font-size: 1.2em;
+                padding: 10px 20px;
+    }
+    .cta-button:hover {
+        color: var(--oxford-blue);
+        background-color: rgb(196, 229, 247);
+        text-decoration: none;
+    }
+
+a {
+    color: var(--glaucous);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+/* Added hover effect to links */
+a:hover {
+    color: var(--glaucous);
+    background-color: var(--black);
+    text-decoration: none;
+}
+
+/* For screens with a maximum width of 768px (typical for mobile) */
+@media (max-width: 768px) {
+    .desktop-video {
+        display: none; /* Hide the desktop video on mobile */
+    }
+
+    .mobile-video {
+        display: flex; /* Show the mobile video */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* For screens with a minimum width of 769px (typical for desktop) */
+@media (min-width: 769px) {
+    .desktop-video {
+        display: flex; /* Show the desktop video on desktop */
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .mobile-video {
+        display: none; /* Hide the mobile video on desktop */
+    }
+}
+
+/* Center the video within the Hero section */
+.video-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Set a maximum width for the video to ensure it doesn't overflow the container */
+.desktop-video, .mobile-video {
+    max-width: 100%; /* Adjust the value as needed */
+    height: auto;
+    
+    
+}
+
+.solution-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
-.image-container {
-    box-sizing: border-box;
+
+/* Shop Card Styles */
+.solution-card {
+    box-sizing: border-box; 
     text-align: center;
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 20px); 
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    background-color: #fdfffcff;
+    background-color: #fff;
+    padding: 20px;
 }
-.image {
-    
+
+/* About Card Styles */
+.solution-card-2 {
+    box-sizing: border-box; 
+    text-align: center;
+    width: calc(50% - 20px); 
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card-image {
     max-width: 100%;
     height: auto;
-    width: 400px;
+    width: 400px; 
+
 }
-.shop-content {
-    background-color: #fdfffcff;
-    padding: auto;
+.solutions {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
 }
+
 @media screen and (max-width: 960px) {
-    .image-container {
+    .solution-card {
         width: calc(50% - 20px);
     }
-    .navbar {
-        display: flex;
+    .solution-card-2 {
+        width: calc(100%);
+    }
+    .navbar  {
+        display:flex;
         flex-direction: column;
         padding: 10px 10px;
-        padding-bottom: 10px;
         margin: 0 5px;
     }
 }
-@media screen and (max-width: 640px) {
-    .image-container {
-        width: 100%;
+    
+@media screen and (max-width: 540px) {
+    .solution-card {
+
+        width: calc(100%);
+
+    }
+    .solution-card-2 {
+        width: calc(100%);
+      
+
+
     }
     .navbar {
         display: flex;
         flex-direction: column;
         padding: 10px 5px;
-        margin: 0 5px;
+        margin: 0 2px;
     }
-    
 }
+
+
+
