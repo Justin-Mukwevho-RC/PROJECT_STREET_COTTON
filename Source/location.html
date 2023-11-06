@@ -12,23 +12,22 @@
 
         <link rel="icon" href="../Assets/images/favicon.png" type="image/png">
 
-        <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Link to the Animate.css stylesheet -->
 
-            /* CSS use is very minimal in Phase One */
+        <link rel="stylesheet" href="styles.css">
 
-        </style>
 
     </head>
 
-    <body style="text-align: center;">
+    <body>
 
-        <header>
+        <header class="animate__animated animate__slideInLeft">
 
             <!-- Street Cotton Logo -->
             
             <a href="index.html">
-            <img src="../Assets/images/logo.png" alt="Street Cotton Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
-            </a><br><br>
+            <img src="../Assets/images/logo.png" alt="Street Cotton Logo" class="logo">
+            </a>
     
             <!-- Navigation Bar -->
             <nav class="navbar">
@@ -37,16 +36,16 @@
                 <a href="about.html"> About Us | </a> <!-- Introduction to the team -->
                 <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue -->
                 <a href="location.html"> Visit Us | </a> <!-- Location of the store --> 
-                <a href="contact.html"> Customer Support</a> <!-- Contact details -->
+                <a href="contact.html"> Customer Support |</a> <!-- Contact details -->
     
             </nav>    
     
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
+        <!-- Location Section -->
+        <section>
 
-            <h1>Visit Our Office</h1>
+            <h1 class="animate__animated animate__slideInRight">Visit Our Office</h1>
             <p>If you'd like to visit our office, you can find us at the following location:</p>
 
             <!-- Embedded Google Map -->
@@ -77,7 +76,17 @@
 
             </address>
 
-            <p>We look forward to welcoming you to our office!</p>
+            <p>Too far away ? Contact Us Instead</p>
+
+            <p>
+
+                <a href="contact.html" class="cta-button">
+                    
+                    CONTACT STREET COTTON
+                
+                </a>
+    
+            </p>
         
         </section>
 
@@ -86,7 +95,8 @@
 
             <p>2023&copy; Street Cotton &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
 
-            <nav>
+            <nav class="navbar">
+
                 <a href="terms.html">Terms & Conditions |</a> <!-- Terms and Conditions -->
                 <a href="privacy.html">Privacy |</a> <!-- Privacy Policy -->
                 <a href="contact.html">Get in touch with us</a> <!-- Contact details -->
