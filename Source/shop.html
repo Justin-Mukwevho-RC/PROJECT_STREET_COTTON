@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Shop - Street Cotton</title>
+        <title>SHOP AT STREET COTTON</title>
 
         <link rel="icon" href="../Assets/images/favicon.png" type="image/png">
 
@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="styles.css">
 
+        <script src="main.js"></script>
 
     </head>
 
@@ -33,10 +34,10 @@
 
                 <a href="index.html">Home | </a> <!-- Current Page -->
                 <a href="about.html"> About Us | </a> <!-- Introduction to the team -->
-                <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue -->
-                <a href="location.html"> Visit Us | </a> <!-- Location of the store --> 
-                <a href="contact.html"> Customer Support |</a> <!-- Contact details -->
-
+                <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue --> 
+                <a href="contact.html"> Contact Us |</a> <!-- Contact details -->
+                <a href="privacy.html"> Privacy | </a> <!-- Location of the store -->
+  
             </nav>    
 
         </header>
@@ -45,80 +46,137 @@
 
             <div class="solutions">
 
-                <h1 class="animate__animated animate__slideInRight">Shop our Tees</h1>
+                <h1 class="animate__animated animate__slideInRight">BROWSE OUR T-SHIRTS</h1>
 
-                <p>Our tees are made from 100% cotton and are available in a variety of colours and sizes.</p>
+                <p>Our T shirts are made from 100% cotton and are available in a variety of colours and sizes.</p>
 
 
-                <div class="solution-grid">
+                <div class="solutions">
+
+                    <h1 class="animate__animated animate__slideInRight">BROWSE OUR T-SHIRTS</h1>
+    
+                    <p>Our T shirts are made from 100% cotton and are available in a variety of colours and sizes.</p>
+    
+    
+                    <div class="solution-grid">
+                    
+                        <!-- Product 1 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image1.jpg" alt="T-Shirt 1" class="card-image" onclick="openModal('modal5')">
+    
+                            <p>White & Red T shirts</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image2.jpg"alt="T-Shirt 2" class="card-image" onclick="openModal('modal6')" >
+    
+                            <p>White & Red + Navy & White T shirts</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image3.jpg"alt="T-Shirt 3" class="card-image" onclick="openModal('modal7')">
+    
+                            <p>White & Black T shirts</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+                        
+                        <!-- Product 4 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image4.jpg"alt="T-Shirt 4" class="card-image" onclick="openModal('modal8')">
+    
+                            <p>White & Black + Navy & White</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+                        
+                        <!-- Product 5 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image5.jpg"alt="T-Shirt 5" class="card-image" onclick="openModal('modal9')">
+    
+                            <p>Cyan T shirts</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+                        
+                        <!-- Product 6 -->
+                        <div class="solution-card">
+    
+                            <img src="../Assets/images/image6.jpg"alt="T-Shirt 6" class="card-image" onclick="openModal('modal10')">
+    
+                            <p>Navy T shirts</p>
+    
+                            <p>R180.00 each</p>
+    
+                        </div>
+    
+                    </div>
+
+                    <!-- Modals -->
+                    <div id="modal5" class="modal">
+
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+
+                    <img class="modal-content" src="../Assets/images/image1.jpg" alt="Le Smooth SA - Founder & CEO">
+
+                    </div>
                 
-                    <!-- Product 1 -->
-                    <div class="solution-card">
+                    <div id="modal6" class="modal">
 
-                        <img src="../Assets/images/image1.jpg" alt="T-Shirt 1" class="card-image">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
 
-                        <p>White & Red Tee</p>
+                    <img class="modal-content" src="../Assets/images/image2.jpg" alt="Justin Mukwevho - CTO">
 
-                        <p>R180.00 incl VAT</p>
+                    </div>
+                
+                    <div id="modal7" class="modal">
+
+                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+
+                    <img class="modal-content" src="../Assets/images/image3.jpg" alt="Chichi Mukwevho - Star Model">
+
+                    </div>
+                
+                    <div id="modal8" class="modal">
+
+                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+
+                    <img class="modal-content" src="../Assets/images/image4.jpg" alt="Lisa Mukwevho - COO">
+
+                    </div>
+            
+                    <div id="modal9" class="modal">
+
+                        <span class="close" onclick="closeModal('modal9')">&times;</span>
+
+                        <img class="modal-content" src="../Assets/images/image5.jpg" alt="Le Smooth SA - Founder & CEO">
 
                     </div>
                     
-                    <!-- Product 2 -->
-                    <div class="solution-card">
+                    <div id="modal10" class="modal">
 
-                        <img src="../Assets/images/image2.jpg"alt="T-Shirt 2" class="card-image">
+                        <span class="close" onclick="closeModal('modal10')">&times;</span>
 
-                        <p>White & Red + Navy & White SC Tees</p>
-
-                        <p>R300.00 incl VAT</p>
-
-                    </div>
-                    
-                    <!-- Product 3 -->
-                    <div class="solution-card">
-
-                        <img src="../Assets/images/image3.jpg"alt="T-Shirt 3" class="card-image">
-
-                        <p>White & Black SC Tee</p>
-
-                        <p>R300 incl VAT</p>
-
-                    </div>
-                    
-                    <!-- Product 4 -->
-                    <div class="solution-card">
-
-                        <img src="../Assets/images/image4.jpg"alt="T-Shirt 4" class="card-image">
-
-                        <p>White & Black + Navy & White</p>
-
-                        <p>R300 incl VAT</p>
-
-                    </div>
-                    
-                    <!-- Product 5 -->
-                    <div class="solution-card">
-
-                        <img src="../Assets/images/image5.jpg"alt="T-Shirt 5" class="card-image">
-
-                        <p>Cyan SC Tee + 2x Navy SC Tees</p>
-
-                        <p>R450 incl VAT</p>
-
-                    </div>
-                    
-                    <!-- Product 6 -->
-                    <div class="solution-card">
-
-                        <img src="../Assets/images/image6.jpg"alt="T-Shirt 6" class="card-image">
-
-                        <p>2x Navy SC Tees</p>
-
-                        <p>R300 incl VAT</p>
-
+                        <img class="modal-content" src="../Assets/images/image6.jpg" alt="Justin Mukwevho - CTO">
+                        
                     </div>
 
-                </div>
             </div>
 
             <!-- Call to action for purchase page -->
@@ -137,14 +195,14 @@
         <!-- Footer Section -->
         <footer>
 
-            <p>2023&copy; Street Cotton &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
+            <p>2023&copy; STREET COTTON &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
 
             <nav class="navbar">
-                
+            
                 <a href="terms.html">Terms & Conditions |</a> <!-- Terms and Conditions -->
-                <a href="privacy.html">Privacy |</a> <!-- Privacy Policy -->
-                <a href="contact.html">Get in touch with us</a> <!-- Contact details -->
-
+                <a href="privacy.html">DO NOT COLLECT MY DATA |</a> <!-- Privacy Policy -->
+                <a href="contact.html">Get in touch with us |</a> <!-- Contact details -->
+    
             </nav>
             
         </footer>
