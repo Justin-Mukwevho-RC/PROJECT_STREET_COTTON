@@ -16,36 +16,13 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script>
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contact-form');
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-
-    // Clear text fields of the initial value when clicked
-    nameInput.addEventListener('click', function () {
-      if (nameInput.value === 'Your Name') {
-        nameInput.value = '';
-      }
-    });
-
-    emailInput.addEventListener('click', function () {
-      if (emailInput.value === 'Your Email') {
-        emailInput.value = '';
-      }
-    });
-
-    form.addEventListener('submit', function (event) {
-      if (nameInput.value === '' || nameInput.value === 'Your Name') {
-        alert('Please enter your name.');
-        event.preventDefault(); // Prevent form submission
-      }
-    });
-  });
-
+    <script
+    
+    src="formValidator.js">
 
     </script>
+
+    <meta name="description" content="Contact Street Cotton for any questions, concerns, or inquiries. We are committed to providing the best customer service and will respond to your message as soon as possible.">
     
 </head>
 
@@ -98,17 +75,12 @@
             <!-- Embedded Google Map -->
 
             <iframe 
+            
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7347.360505476325!2d30.485404!3d-22.962!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x1ec5c700f095b9f7%3A0x55fe18b2f0226518!2sMvelaphanda%20St%2C%20Thohoyandou-G%2C%20Thohoyandou%2C%200950%2C%
+                20South%20Africa!5e0!3m2!1sen!2sus!4v1699992871940!5m2!1sen!2sus"
 
-                width="1280" 
-                height="720"
-                frameborder="0"
-                style="border:0"
-
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.128602687086!2d30.475700915253582!3d
-                -22.983692694694455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef0ee6d52fb9a5b%3A0x86ac1f7
-                42e9d2b!2sStreet%20Cotton!5e0!3m2!1sen!2sus!4v1631283151266!5m2!1sen!2sus"
-
-                allowfullscreen>
+                width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             
             </iframe> 
 
@@ -156,7 +128,7 @@
 
                     <p>If you have any questions, you can email us from this form</p>
 
-                    <form id="contact-form">
+                    <form id="contact-form" action="mailto:ST10101766@rcconnect.edu.za" method="post" enctype="text/plain"> 
 
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
