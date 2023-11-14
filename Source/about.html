@@ -7,13 +7,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>About Street Cotton</title>
+        <title>ABOUT STREET COTTON</title>
 
         <link rel="icon" href="../Assets/images/favicon.png" type="image/png">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Link to the Animate.css stylesheet -->
 
         <link rel="stylesheet" href="styles.css">
+
+        <script src="main.js"></script>
+
+        <meta name="description" content="Discover the visionary board of executives behind Street Cotton. Learn about our commitment to providing high-quality streetwear inspired by Thohoyandou, Soweto, and Makhado Biaba.">
+
+            
 
 
     </head>
@@ -33,20 +39,20 @@
             <!-- Navigation Bar -->
             <nav class="navbar">
 
-                <a href="index.html">Home | </a> <!-- Current Page -->
-                <a href="about.html"> About Us | </a> <!-- Introduction to the team -->
-                <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue -->
-                <a href="location.html"> Visit Us | </a> <!-- Location of the store --> 
-                <a href="contact.html"> Customer Support |</a> <!-- Contact details -->
+              <a href="index.html">Home | </a> <!-- Current Page -->
+              <a href="about.html"> About Us | </a> <!-- Introduction to the team -->
+              <a href="shop.html"> Shop Now | </a> <!-- T shirt Catalogue --> 
+              <a href="contact.html"> Contact Us |</a> <!-- Contact details -->
+              <a href="privacy.html"> Privacy | </a> <!-- Location of the store -->
 
-            </nav>    
+          </nav>    
 
         </header>
 
         <section> 
 
             <!-- Introduction Section -->
-            <h1 class="animate__animated animate__slideInRight">About Street Cotton</h1>
+            <h1 class="animate__animated animate__slideInRight">ABOUT STREET COTTON</h1>
 
             <p>
                 
@@ -57,68 +63,72 @@
 
         </section>
 
-        <section class="solutions"> <!-- Gallery Section -->
+        <section class="solutions">
 
-            <!-- Founder & Team Section -->
-            <h2>Meet the board of executives</h2>
+            <h2>Meet the board of executives behind STREET COTTON</h2>
 
             <div class="solution-grid">
-            
-            <!-- Founder & CEO -->
-            <div class="solution-card-2">
 
-                <img src="../Assets/images/lesmooth.jpg" alt="Le Smooth SA - Founder & CEO" class="card-image"> <!-- Image is resized to fit the page -->
+              <!-- Founder & CEO -->
+              <div class="solution-card-2">
 
-                <h3>Le Smooth SA</h3> <!-- Name of the founder -->
+                <img src="../Assets/images/lesmooth.jpg" alt="Le Smooth SA - Founder & CEO" class="card-image" onclick="openModal('modal1')">
 
-                <p>Founder & CEO</p> <!-- Position of the founder -->
+                <h3>Le Smooth SA</h3>
 
-                <p>Our visionary Founder & CEO, is the driving force behind Street Cotton.</p> <!-- Short description of the founder -->
+                <p>Founder & CEO</p>
+                
+                <p>The driving force behind Street Cotton.</p>
 
-            </div>
-
-            <!-- CTO -->
-            <div class="solution-card-2">
-
-                <img src="../Assets/images/justin.jpg" alt="Justin Mukwevho - CTO" class="card-image">
-
+              </div>
+          
+              <!-- CTO -->
+              <div class="solution-card-2">
+                <img src="../Assets/images/justin.jpg" alt="Justin Mukwevho - CTO" class="card-image" onclick="openModal('modal2')">
                 <h3>Justin Mukwevho</h3>
-
                 <p>Chief Technology Officer</p>
-
-                <p>Tech-savvy genius who ensures our online presence runs seamlessly. </p>
-
-            </div>
-
-            <!-- Star Model -->
-            <div class="solution-card-2">
-
-                <img src="../Assets/images/chichi.jpg" alt="Chichi Mukwevho - Star Model" class="card-image">
-
+                <p>Tech-savvy genius who ensures our online presence runs seamlessly.</p>
+              </div>
+          
+              <!-- Star Model -->
+              <div class="solution-card-2">
+                <img src="../Assets/images/chichi.jpg" alt="Chichi Mukwevho - Star Model" class="card-image" onclick="openModal('modal3')">
                 <h3>Chichi Mukwevho</h3>
-
                 <p>Star Model</p>
-
-                <p>She's the face of our brand, inspiring others to embrace their uniqueness</p>
-
-            </div>
-
-            <!-- COO -->
-            <div class="solution-card-2">
-
-                <img src="../Assets/images/lisa.jpeg" alt="Lisa Mukwevho - COO" class="card-image">
-
+                <p>She's the face of our brand, inspiring others to embrace their uniqueness.</p>
+              </div>
+          
+              <!-- COO -->
+              <div class="solution-card-2">
+                <img src="../Assets/images/lisa.jpg" alt="Lisa Mukwevho - COO" class="card-image" onclick="openModal('modal4')">
                 <h3>Lisa Mukwevho</h3>
-
                 <p>Chief Operating Officer</p>
-
                 <p>Her attention to detail and commitment keep our operations running smoothly.</p>
-
+              </div>
             </div>
-
+          
+            <!-- Modals -->
+            <div id="modal1" class="modal">
+              <span class="close" onclick="closeModal('modal1')">&times;</span>
+              <img class="modal-content" src="../Assets/images/lesmooth.jpg" alt="Le Smooth SA - Founder & CEO">
             </div>
-
-        </section>
+          
+            <div id="modal2" class="modal">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <img class="modal-content" src="../Assets/images/justin.jpg" alt="Justin Mukwevho - CTO">
+            </div>
+          
+            <div id="modal3" class="modal">
+              <span class="close" onclick="closeModal('modal3')">&times;</span>
+              <img class="modal-content" src="../Assets/images/chichi.jpg" alt="Chichi Mukwevho - Star Model">
+            </div>
+          
+            <div id="modal4" class="modal">
+              <span class="close" onclick="closeModal('modal4')">&times;</span>
+              <img class="modal-content" src="../Assets/images/lisa.jpg" alt="Lisa Mukwevho - COO">
+            </div>
+          </section>
+          
 
         <!-- Call to action for visiting shop page -->
         <p>
@@ -134,12 +144,12 @@
         <!-- Footer Section -->
         <footer>
 
-        <p>2023&copy; Street Cotton &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
+        <p>2023&copy; STREET COTTON &trade; All rights Reserved</p> <!-- Year of establishment & Legal notice -->
 
         <nav class="navbar">
             
             <a href="terms.html">Terms & Conditions |</a> <!-- Terms and Conditions -->
-            <a href="privacy.html">Privacy |</a> <!-- Privacy Policy -->
+            <a href="privacy.html">DO NOT COLLECT MY DATA |</a> <!-- Privacy Policy -->
             <a href="contact.html">Get in touch with us |</a> <!-- Contact details -->
 
         </nav>
